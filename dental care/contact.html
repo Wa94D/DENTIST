@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+      <!-- font awesome link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+      <!-- custom stylesheet -->
+      <link rel="stylesheet" href="style.css">
+      <!-- media queries css file link -->
+      <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- header section starts -->
+<header>
+    <!-- navbar logo -->
+    <a href="index.html" class="navbar__brand">Dental<span>Care</span></a>
+    <!-- navbar links -->
+    <nav class="navbar">
+        <a href="about.html" class="nav__links">About</a>
+        <a href="services.html" class="nav__links">Services</a>
+        <a href="reviews.html" class="nav__links">reviews</a>
+        <a href="contact.html" class="nav__links">contact</a>
+    </nav>
+    <a href="appointment.html" class="btn">make  appointment</a>
+    <div id="navbar__toggle" class="fas fa-bars"></div>
+</header>
+<!-- header section ends -->	
+<!-- contact section starts-->
+<section class="contact" id="contact">
+    <div class="heading">
+        <h2>get in touch</h2>
+    </div>
+<div class="box-container">
+    <div class="box">
+        <div class="name">
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" placeholder="Enter your name"  id="name">
+        </div>
+        <div class="email">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder=" your  email address" id="email">  
+        </div>
+        <div class="number">
+            <i class="fas fa-phone"></i>
+            <input type="number" name="number" placeholder="Enter your number"  id="number">
+        </div>
+        <div class="date">
+            <i class="fas fa-calendar-alt"></i>
+            <input type="date" name="date" placeholder="Enter date for appointment"  id="date">
+        </div>
+        <div class="messagebox">
+            <i class="fas fa-message"></i>
+          <textarea name="" id="msg" cols="30" rows="10" placeholder="Please tell us some details why are you booking apointment?"></textarea>
+        </div>
+        <div class="submit">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+           <button class="submit" id="submit" onclick="message()">Submit</button>
+        </div>
+        <div class="message">
+            <div class="success" id="success">thanks for booking appointment</div>
+            <div class="danger" id="danger">fields can't be empty</div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- contact section ends-->
+
+
+<!-- footer section starts-->
+
+<section class="footer" id="footer">
+    <h2> &#169 made by Mr_Developer with lot of hard work and love <span>design followed by mr_web_designer</span></h2>
+  
+</section>
+
+<!-- footer section starts-->
+<script src="/app.js"></script>
+</body>
+</html>
